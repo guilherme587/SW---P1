@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/login.css">
+
+<form id="login" method="post">
+  <div class="mb-3">
+    <h1>Login</h1>
+    <label for="formGroupExampleInput" class="form-label">Usuário</label>
+    <input name="login" type="text" class="form-control" id="formGroupExampleInput" placeholder="Digite seu usuário">
+  </div>
+  <div class="mb-3">
+    <label for="formGroupExampleInput2" class="form-label">Senha</label>
+    <input name="password" type="password" class="form-control" id="formGroupExampleInput2" placeholder="Digite sua senha">
+  </div>
+  <div id="btns">
+    <button name="entrar" value="entrar" type="submit" class="btn btn-success">Entrar</button>
+    <a style="color: white;" id="cadastro" name="cadastro" class="btn btn-success">Cadastrar-se</a>
+  </div>
+</form>
+
+<script src="scripts/scriptLogin.js"></script>

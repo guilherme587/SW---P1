@@ -1,0 +1,51 @@
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a id="user-name" class="navbar-brand" href="#">@{{name_user}}</a>
+        <a id="btnSair" style="color: white;" class="btn btn-success">SAIR</a>
+    </nav>
+</header>
+<main>
+    <div id="container-0">
+        <div id="meu-grafico-container">
+            <canvas id="meu-grafico"></canvas>
+        </div>
+
+        <div id="cadastroMacros">
+            <select id="macro">
+                <option value="agua">Água</option>
+                <option value="carbo">Carboidrato</option>
+                <option value="proteina">Proteína</option>
+                <option value="gordura">Gordura</option>
+            </select>
+            <input id="macroValor" type="text" name="" id="" placeholder="insira o valor em g / ml">
+            <input class="btn btn-success" onclick="{addMacro()}" type="button" value="Adicionar +">
+        </div>
+    </div>
+
+    <div id="chatContainer">
+        <div id="chat">
+            <h1>Faça uma pergunta</h1>
+            <textarea id="chatGPT" name="chatGPT" cols="30" rows="10"></textarea>
+            <textarea id="chatUser" name="chatUser" cols="30" rows="4"></textarea>
+            <h2>Perguntas frequentes</h2>
+            <div id="btnsOptions">
+                <input onclick="{btnsOptions('Dieta vegada')}" class="btn btn-light" type="button" value="Dieta vegada">
+                <input onclick="{btnsOptions('Faça uma dieta para ganhos de massa magra')}" class="btn btn-light" type="reset" value="Faça uma dieta para ganhos de massa magra">
+                <input onclick="{btnsOptions('Faça uma dieta para emagrecer')}" class="btn btn-light" type="reset" value="Faça uma dieta para emagrecer">
+            </div>
+        </div>
+        {{!-- <input id="chatButton" onclick="{mostrarChat()}" type="button" value="CHAT"> --}}
+        <button id="chatButton" type="button" onclick="{mostrarChat()}">✉</button>
+    </div>
+</main>
+
+<style>
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+    }
+</style>
+
+<script src="/scripts/scriptChat.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="/scripts/script.js"></script>

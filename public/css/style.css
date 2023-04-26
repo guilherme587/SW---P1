@@ -1,0 +1,125 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: rgb(233, 233, 233);
+}
+#container-0{
+    display: flex;
+    padding: 3rem;
+}
+#cadastroMacros{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    gap: 10px;
+}
+#meu-grafico-container{
+    width: 400px;
+}
+/* CHAT */
+
+#chat{
+    border-radius: 5px;
+    padding: 2rem;
+    width: auto;
+    height: 100%;
+    display: none;
+    border-radius: 50px;
+    background: linear-gradient(145deg, #006fe6, #0084ff);
+    box-shadow:  20px 20px 60px #c9c9c9,
+                 -20px -20px 60px #ffffff;
+}
+#chat h1{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 0.5rem;
+}
+#chat h2{
+    color: white;
+    font-weight: 400;
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+#chatGPT{
+    height: 30%;
+}
+#chatGPT, #chatUser{
+    padding: 15px;
+    color: rgb(51, 51, 51);
+    font-size: 1rem;
+    width: 100%;
+    border-radius: 5px;
+}
+#btnsOptions{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+#chatContainer{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 1rem;
+}
+/* botoes  */
+@keyframes vibrar {
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-5px) rotate(-3deg);
+    }
+    50% {
+      transform: translateX(10px) rotate(3deg);
+    }
+    75% {
+      transform: translateX(-5px) rotate(-3deg);
+    }
+    100% {
+      transform: translateX(0);
+    }
+}
+  
+#chatButton{
+    animation: vibrar 0.5s infinite;
+    animation-delay: 1s;
+    margin-top: 1rem;
+    color: white;
+    font-size: 1.5rem;
+    background: #006fe6;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 0 none;
+    outline: none;
+}
+#cadastroMacros{
+    display: inline-block;
+}
+textarea:focus, input:focus{
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+} 
+textarea{
+    padding: 0.8rem;
+    border: 0 none;
+    border-radius: 50px;
+    -webkit-box-shadow: 0px 0px 18px 0px #0084ff;
+    -moz-box-shadow: 0px 0px 18px 0px #0084ff;
+    box-shadow: 0px 0px 18px 0px #0084ff;
+}
+#macroValor, select{
+    padding: 0.5rem;
+    border-radius: 1rem;
+    border: 0 none;
+    -webkit-box-shadow: 0px 0px 18px 0px #cccccc;
+    -moz-box-shadow: 0px 0px 18px 0px #cccccc;
+    box-shadow: 0px 0px 18px 0px #cccccc;
+}
